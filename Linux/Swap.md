@@ -7,6 +7,9 @@
 	1. `sudo mkswap /swapfile`
 1. Enable
 	1. `sudo swapon /swapfile`
+1. Enable automatically on boot
+	1. Run `sudo crontab -e`
+	1. Add `@reboot swapon /swapfile`
 
 # How to enable Zswap
 
