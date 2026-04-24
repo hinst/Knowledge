@@ -1,4 +1,4 @@
-Enable BTRFS compression
+# Enable BTRFS compression
 
 1. Edit `/etc/fstab` and add after `default` either of these:
 	1. `compression=lzo`

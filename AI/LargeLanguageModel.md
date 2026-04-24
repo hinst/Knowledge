@@ -3,4 +3,4 @@
 ## Disable thinking
 Edit template. Add:
 
-    {%- set enable_thinking = false %}
+	{%- set enable_thinking = false %}
