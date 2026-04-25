@@ -9,3 +9,5 @@ storage:
 replication:
   replSetName: rs0
 ```
+
+Launch Mongo Shell and run `rs.initiate()` once
