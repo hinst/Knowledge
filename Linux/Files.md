@@ -3,6 +3,8 @@
 ## Increase open file limit
 1. Check current limit `ulimit -n`
 	1. Default is `1024`
+
+ℹ️ Source article: `https://blog.kowalczyk.info/til-increase-open-file-limit-on-ubuntu-linux.html`
 1. Edit file `/etc/security/limits.conf`
 	1. Run `sudo nano /etc/security/limits.conf`
 	1. Add
