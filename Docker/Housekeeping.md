@@ -1,7 +1,11 @@
 # Docker Housekeeping
 
+## After installation:
+1. Allow Docker permission
+	1. Run `sudo usermod -aG docker $USER`
+
 ## Reclaim disk space:
-	docker system prune -a
+Run `docker system prune -a`
 
 ## Reclaim virtual hard drive space on Windows
 https://stackoverflow.com/questions/70946140/docker-desktop-wsl-ext4-vhdx-too-large
