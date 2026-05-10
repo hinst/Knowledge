@@ -7,3 +7,5 @@
 In file `.npmrc` add:
 
 	min-release-age=30
+
+Introduced since NPM version v11.10.0
