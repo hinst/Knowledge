@@ -1,4 +1,4 @@
-# Disable App Armor
+# Disable AppArmor
 
 1. Edit GRUB configuration file
 	1. `sudo nano /etc/default/grub`
@@ -12,4 +12,24 @@
 	1. `sudo systemctl daemon-reload`
 1. Reboot
 1. Check status
-	1. Run `sudo aa-status`
+	1. Run `aa-status`
+	1. Run `aa-enabled`
+
+
+# Disable AppArmor on OrangePi
+
+Edit file
+
+	/boot/orangepiEnv.txt
+
+Add text:
+
+	extraargs=apparmor=0 security=none
+
+Run commands:
+
+	sudo update-initramfs -u
+	sudo systemctl disable apparmor
+	reboot
+	aa-status
+	aa-enabled
