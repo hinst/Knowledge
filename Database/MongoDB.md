@@ -21,3 +21,21 @@ Start session:
 List of databases:
 
 	show dbs
+
+# Mongo dump and restore
+
+Useful settings for both `mongodump` and `mongorestore`
+
+	--uri
+	--archive=file.gz
+	--gzip
+	--numParallelCollections=1
+
+Useful settings for `mongodump`
+
+	--forceTableScan
+
+Useful settings for `mongorestore`
+
+	--drop
+	--nsFrom="${SOURCE_DB_NAME}.*" --nsTo="${TARGET_DB_NAME}.*"
