@@ -7,3 +7,9 @@ As of 2026.06.07 does not support the latest version of HIP SDK.
 * Currently supported by ComfyUI-Zluda: `v6.4.2`
 
 Do not try to use the unsupported version, it will not work.
+
+⚠️ ComfyUI-Zluda no longer working, I switched to using standard version of ComfyUI with ROCm
+
+# Useful flags for running ComfyUI on graphics card 7900 XT
+
+	--use-split-cross-attention --cache-none --disable-smart-memory --disable-pinned-memory --disable-async-offload
