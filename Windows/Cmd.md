@@ -7,3 +7,7 @@
 ## Install WMIC command
 
 	DISM /Online /Add-Capability /CapabilityName:WMIC~~~~
+
+Remove:
+
+	DISM /Online /Remove-Capability /CapabilityName:WMIC~~~~​
