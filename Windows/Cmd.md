@@ -11,3 +11,7 @@
 Remove:
 
 	DISM /Online /Remove-Capability /CapabilityName:WMIC~~~~​
+
+## Run from Windows Task Scheduler without displaying terminal window
+
+In Task -> Properties -> General, choose Run Whether user is logged in or not
