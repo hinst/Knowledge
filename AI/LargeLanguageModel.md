@@ -33,3 +33,7 @@ Import model file
 Launch customized model
 
 	ollama run gemma4:e4b_1cpu
+
+## Ollama set context size
+
+	PARAMETER num_ctx 64000
