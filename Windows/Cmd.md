@@ -15,3 +15,9 @@ Remove:
 ## Run from Windows Task Scheduler without displaying terminal window
 
 In Task -> Properties -> General, choose Run Whether user is logged in or not
+
+## Boot into safe mode
+
+	shutdown /r /o /t 0
+
+Afterwards, choose: Troubleshoot, Restart in Safe Mode
