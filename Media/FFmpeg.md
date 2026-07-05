@@ -14,3 +14,7 @@ File format for list.txt:
 
 	file 'first.mp4'
 	file 'other.mp4'
+
+# Change FPS
+
+	ffmpeg -i input.mp4 -c:v copy -bsf:v setts=ts=N/\(30*TB\) output.mp4
