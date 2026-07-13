@@ -18,3 +18,7 @@ File format for list.txt:
 # Change FPS
 
 	ffmpeg -i input.mp4 -c:v copy -bsf:v setts=ts=N/\(30*TB\) output.mp4
+
+# Reverse video
+
+	ffmpeg -i input.mp4 -vf reverse -af areverse -c:v libx264 -crf 20 -c:a aac output.mp4
