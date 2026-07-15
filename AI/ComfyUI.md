@@ -13,3 +13,8 @@ Do not try to use the unsupported version, it will not work.
 # Useful flags for running ComfyUI on graphics card 7900 XT
 
 	--use-split-cross-attention --cache-none --disable-smart-memory --disable-pinned-memory --disable-async-offload
+
+# Commands to run after switching ComfyUI version through Git
+
+	venv\Scripts\activate
+	pip install -r requirements.txt
