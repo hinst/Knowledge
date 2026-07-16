@@ -21,4 +21,8 @@ File format for list.txt:
 
 # Reverse video
 
-	ffmpeg -i input.mp4 -vf reverse -af areverse -c:v libx264 -crf 20 -c:a aac output.mp4
+	ffmpeg -i input.mp4 -vf reverse -af areverse -c:v libx264 -crf 16 -c:a aac output.mp4
+
+Without audio
+
+	ffmpeg -i input.mp4 -vf reverse -c:v libx264 -crf 16 output.mp4
