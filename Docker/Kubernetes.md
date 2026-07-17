@@ -8,3 +8,7 @@
 # Save logs from pod to file
 
 	kubectl logs --namespace=NAMESPACE POD_NAME > FILE.log
+
+Streaming:
+
+	kubectl logs --namespace=NAMESPACE POD_NAME -f | tee stream.log
