@@ -9,7 +9,7 @@ Install
 Install extensions
 
 	pi install npm:pi-lmstudio
-	pi install npm:pi-subagents
+	pi install npm:@mjakl/pi-subagent
 
 Launch
 
@@ -45,6 +45,21 @@ Without extension, we do not have context fill ratio indicator.
     }
 }
 ```
+
+## Configure extension npm:@mjakl/pi-subagent
+
+Go to folder `~/.pi/agent/agents` and keep one file in there for minimal subagent: `worker.md`
+
+	---
+	name: worker
+	description: Implement delegated subtask
+	tools: read, grep, find, ls, edit
+	---
+
+	You are worker subagent. Implement your delegated task.
+	Keep the response concise, structured, and optimized for agent handoff.
+
+## Configure extension npm:pi-subagents - obsolete, because npm:@mjakl/pi-subagent is better
 
 Configure extension `pi-subagents` in file `~/.pi/agent/extensions/subagent`
 
