@@ -21,3 +21,16 @@ In Task -> Properties -> General, choose Run Whether user is logged in or not
 	shutdown /r /o /t 0
 
 Afterwards, choose: Troubleshoot, Restart in Safe Mode
+
+## ll command in Windows
+
+Put into `ll.bat` and add to `%PATH%`:
+
+```bat
+@echo off
+if "%~1"=="" (
+  ls -l -h -a --color=auto
+) else (
+  ls -l -h -a --color=auto "%*"
+)
+```
