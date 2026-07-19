@@ -22,7 +22,7 @@ In Task -> Properties -> General, choose Run Whether user is logged in or not
 
 Afterwards, choose: Troubleshoot, Restart in Safe Mode
 
-## ll command in Windows
+## `ll` command in Windows
 
 Put into `ll.bat` and add to `%PATH%`:
 
