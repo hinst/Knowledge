@@ -19,3 +19,9 @@ https://stackoverflow.com/questions/70946140/docker-desktop-wsl-ext4-vhdx-too-la
 	wsl --list --verbose
 	DISKPART> select vdisk file="C:\Users\USERNAME\AppData\Local\Docker\wsl\disk\docker_data.vhdx"
 	DISKPART> compact vdisk
+
+## Use absolute mount path on Windows
+
+Use path format with double slash in command line argument `-v`. Example:
+
+	//c/Dev/sandbox
