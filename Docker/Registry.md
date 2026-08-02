@@ -5,13 +5,19 @@ Example configuration: store in file `docker-compose.yaml`
 ```yaml
 services:
   registry:
-    image: registry:2
+    image: registry:3
     restart: always
     user: "1000:1000"
+    environment:
+      - REGISTRY_HTTP_RELATIVEURLS=true
+      - REGISTRY_AUTH=htpasswd
+      - REGISTRY_AUTH_HTPASSWD_REALM=Registry Realm
+      - REGISTRY_AUTH_HTPASSWD_PATH=/auth/htpasswd
     ports:
       - "5000:5000"
     volumes:
       - registry_data:/var/lib/registry
+      - ./auth:/auth
 
 volumes:
   registry_data:
@@ -19,7 +25,7 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/orangepi/App/docker-registry/data```
+      device: /home/orangepi/App/docker-registry/data
 ```
 
 Call HTTP GET `/v2` to see if it is working. The response will be `{}`
@@ -49,8 +55,8 @@ mirrors:
     - "http://192.168.0.23:30001"
 
 configs:
-"192.168.0.23:30001":
-  auth:
-  username: "docker-registry"
-  password: "my-password"
+  "192.168.0.23:30001":
+    auth:
+      username: "docker-registry"
+      password: "my-password"
 ```
