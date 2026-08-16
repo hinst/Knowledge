@@ -10,6 +10,7 @@ Install extensions
 
 	pi install npm:pi-lmstudio
 	pi install npm:@mjakl/pi-subagent
+	pi install npm:@nonplanarslicer/pi-save-output
 
 Launch
 
