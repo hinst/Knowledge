@@ -4,6 +4,22 @@
 
 	prompt $P$_$G
 
+VSCode:
+
+```json
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": ["/K", "prompt $P$_$G"],
+            "icon": "terminal-cmd"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+```
+
 ## Install WMIC command
 
 	DISM /Online /Add-Capability /CapabilityName:WMIC~~~~
